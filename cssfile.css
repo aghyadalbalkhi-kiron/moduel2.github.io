@@ -1,0 +1,293 @@
+body{
+	
+margin:0;
+	
+}
+/* image header*/
+.header-content{
+	
+	text-align:center;
+	
+}
+/* div which  content header*/
+.divheader{
+	
+	width:100%;
+	height:400px;
+	 box-shadow: 0 4px 8px 0 #26C6DA;
+}
+
+.contier{
+	
+	
+	
+}
+/* ******** Nav Bar ***********/
+
+.topnav {
+  overflow: hidden;
+  background-color: #212121;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index:99;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D50000;
+  color: black;
+  font-weight:bold;
+}
+
+.topnav a.active {
+    background-color: #26C6DA;
+    color: white;
+}
+/* ************    END NAV BAR         **************** */
+
+
+
+ /* text animation on image header*/
+.reveal-text,
+.reveal-text:after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+		   
+}
+ /* text animation on image header*/
+.reveal-text {
+  position: relative;
+  font-size: 10vw;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation-name: reveal-text;
+          animation-name: reveal-text;
+  color: #FFF;
+  white-space: nowrap;
+  cursor: default;
+}
+ /* ******************************************* text animation on image header ***************************     */
+.reveal-text:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #80DEEA;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  pointer-events: none;
+  -webkit-animation-name: revealer-text;
+          animation-name: revealer-text;
+}
+
+@-webkit-keyframes reveal-text {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes reveal-text {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+@-webkit-keyframes revealer-text {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+  }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  60% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@keyframes revealer-text {
+  0%, 50% {
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+  }
+  60%, 100% {
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  60% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+ /* text animation on image header*/
+.note {
+  position: fixed;
+  bottom: 1vh;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+}
+ /* text animation on image header*/
+.note pre {
+  display: inline-block;
+}
+/* contier Class*/
+
+.contier{
+	margin-bottom:10px;
+	padding:10px;
+	position:relative;
+	
+}
+
+/* ******************************************* END text animation on image header ***************************     */
+
+/* ************************* about Me *************************************** */
+
+.aboutme{
+	
+	color:black;
+	background-color:#FFFFFF;
+	width:100%;
+	height:400px;
+	text-align:center;
+	/*text-shadow: 0 0 3px #26C6DA;*/
+	box-shadow: 0 5px 3px #26C6DA;
+	margin-top:10px;
+	margin-bottom:10px;
+		 border-radius: 25px;	
+}
+/* div  insid about me  */
+.aboutmediv{
+	border:0.5px solid;
+	border-left-color: #ff0000;
+float:left;
+ margin-left:300px; font-family:Courier,Monaco, monospace;
+box-shadow: 0 2px 3px #212121; width:800px; height:250px;
+font-weight:bold;
+font-size:25px;
+
+}
+/* ************************* END about Me *************************************** */
+
+/* *************************  interested *************************************** */
+.interested{
+	
+	color:black;
+	background-color:#FFFFFF;
+	width:100%;
+	height:400px;
+	text-align:center;
+	text-shadow: 0 0 3px #26C6DA;
+	box-shadow: 0 5px 3px #26C6DA;
+	margin-top:10px;
+	margin-bottom:10px;
+	 border-radius: 25px;	
+	
+    
+}
+
+.divline{
+	width:48%; 	height:300px; 	border:0.5px solid;
+	float:left; border-radius: 25px;	
+	margin-right:8px;
+	margin-left:5px;
+	height:300px;
+	border:0.5px solid;
+	border-left-color: #ff0000;
+	display:inline;
+	border:0.5px solid;
+	border-left-color: #ff0000;
+	font-family:Courier,Monaco, monospace;
+	box-shadow: 0 2px 3px #212121;
+	font-weight:bold;
+	font-size:25px;
+}
+
+/* ************************* END interested *************************************** */
+
+.contacthtml{
+	width:100%;
+	border-radius: 25px 25px 0 0;
+	height:250px;
+	background: linear-gradient(270deg, #18bbec, #ea3c78);
+	animation-name: contactbar;
+	-webkit-animation: contactbar 8s ease infinite;
+	-moz-animation: contactbar 8s ease infinite;
+	animation: contactbar 8s ease infinite;
+
+@-webkit-keyframes contactbar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes contactbar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes contactbar { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+.imgcontact{
+	border: 5px solid #26C6DA;  border-radius: 100px; box-shadow: 0 2px 3px #212121;
+	
+}
+	
+
